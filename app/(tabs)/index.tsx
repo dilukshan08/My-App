@@ -3,7 +3,6 @@ import * as ImagePicker from 'expo-image-picker';
 import { useState } from 'react';
 import { type ImageSource } from 'expo-image';
 
-
 import Button from '../../Components/Buttons';
 import ImageViewer from '../../Components/ImageViewer';
 import IconButton from '../../Components/IconButton';
@@ -11,10 +10,11 @@ import CircleButton from '../../Components/CircleButton';
 import EmojiPicker from '../../Components/EmojiPicker';
 import EmojiList from '../../Components/EmojiList';
 
+
 import EmojiSticker from '../../Components/EmojiSticker';
 
 
-const PlaceholderImage = require('@/assets/images/background-image.png');
+const PlaceholderImage = require('../../assets/images/background-image.png');
 
 export default function Index() {
   const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined);
